@@ -10,14 +10,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-public class GitTest {
+public class GitTest2 {
 @Test
 public void loginTest() throws IOException{
 	WebDriver wd=new FirefoxDriver();
 	wd.manage().window().maximize();
-	wd.get("https://www.bing.com/");
+	wd.get("https://www.google.com/");
 	File src=((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
-    FileUtils.copyFile(src, new File("C:\\Users\\91866\\workspace\\BDDScreenShotTest\\src\\Screenshot"));
+    FileUtils.copyFile(src, new File("C:\\Users\\91866\\workspace\\GitHubTest\\src\\screenshot\\name.jpg"));
 	
 }
 }
